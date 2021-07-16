@@ -4,5 +4,5 @@ RUN apk add --no-cache certbot py-pip && \
     pip install certbot-nginx && \
     apk del .build-deps
 EXPOSE 80
-EXPOSE 447
+EXPOSE 443
 CMD ["nginx", "-g", "daemon off;"]
