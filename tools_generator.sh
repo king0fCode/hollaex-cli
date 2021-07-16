@@ -470,8 +470,8 @@ services:
       - ./nginx/static/:/usr/share/nginx/html
       - ./letsencrypt:/etc/letsencrypt
     ports:
-      - ${ENVIRONMENT_LOCAL_NGINX_HTTP_PORT:-80}:80
-      - ${ENVIRONMENT_LOCAL_NGINX_HTTPS_PORT:-443}:443
+      - ${ENVIRONMENT_LOCAL_NGINX_HTTP_PORT:-80}:888
+      - ${ENVIRONMENT_LOCAL_NGINX_HTTPS_PORT:-443}:447
     environment:
       - NGINX_PORT=80
     entrypoint: 
